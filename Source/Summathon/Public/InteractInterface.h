@@ -42,6 +42,8 @@ struct FItemData
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
 	float HungerRestore;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
+	class UTexture2D* ItemIcon;
 };
 
 
