@@ -17,7 +17,8 @@ enum class EItemType : uint8
 	Food UMETA(DisplayName = "Food"),
 	Weapon UMETA(DisplayName = "Weapon"),
 	Resource UMETA(DisplayName = "Resource"),
-	Currency UMETA(DisplayName = "Currency")
+	Currency UMETA(DisplayName = "Currency"),
+	Medicine UMETA(DisplayName = "Medicine")
 };
 
 
@@ -41,6 +42,9 @@ struct FItemData
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
 	float HungerRestore;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
+	float HealAmount;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
 	class UTexture2D* ItemIcon;
