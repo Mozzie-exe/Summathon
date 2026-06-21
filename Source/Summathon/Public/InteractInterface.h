@@ -48,6 +48,9 @@ struct FItemData
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
 	class UTexture2D* ItemIcon;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
+	int32 CurrentCount;
 };
 
 
