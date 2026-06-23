@@ -51,6 +51,9 @@ struct FItemData
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
 	int32 CurrentCount;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
+	TSubclassOf<AActor> ItemClass;
 };
 
 
