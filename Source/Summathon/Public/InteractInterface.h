@@ -54,6 +54,10 @@ struct FItemData
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
 	TSubclassOf<AActor> ItemClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item Data")
+	FText ItemDescription;
+
 };
 
 
